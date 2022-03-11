@@ -1,7 +1,12 @@
 #include <stdio.h>
 /**
+<<<<<<< HEAD
 *main - Entry point
 *Return: Always 0 (sucess)
+=======
+* main - Entry point 
+* Return: Always 0 (Success)
+>>>>>>> 13926ffc0d9c21f5b0c95c2cd7368af895da17b8
 */
 int main(void)
 {
