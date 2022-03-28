@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr - gets leght of a prefix substing
+ * _strchr - gets leghtof a prefix substring
  * @s: string to check
  * @accept: string to check against
  *
@@ -16,7 +16,7 @@ for (i = 0; s[i]; i++)
 {
 for (j = 0; accept[j]; j++)
 {
-if(s[i] == accept [j])
+if (s[i] == accept[j])
 break;
 }
 if (!accept[j])
