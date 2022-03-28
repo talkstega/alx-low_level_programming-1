@@ -1,24 +1,26 @@
 #include "main.h"
 
 /**
- * _strchr -  function that locates a character in a string.
- * @s: cadena de caracteres.
- * @c: caracter a destacar.
- * Return: s.
+ * _strchr - gets leght of a prefix substing
+ * @s: string to check
+ * @accept: string to check against
+ *
+ * Return: number of bytes of s in accept
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+unsigned int i, j;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
-	}
-	return (0);
+for (i = 0; s[i]; i++)
+{
+for (j = 0; accept[j]; j++)
+{
+if(s[i] == accept [j])
+break;
+}
+if (!accept[j])
+break;
+}
+return (i);
 }
